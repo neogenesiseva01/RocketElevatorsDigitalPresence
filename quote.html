@@ -1278,55 +1278,55 @@
 												
 						
 												<label class="form_col"  class="disabledCheckboxes" for="apartments">Number of apartments :</label>
-												<input name="" id="apartments" type="number" min="0" value=""disabled />
+												<input name="imput_client" id="apartments" type="number" min="0" value=""disabled />
 												<br /><br />
 									
 												<label class="form_col"  class="disabledCheckboxes" for="floors">Floors contained in the building :</label>
-												<input name="" id="floors" type="number" min="0"  value=""disabled />
+												<input name="imput_client" id="floors" type="number" min="0"  value=""disabled />
 										
 												<br /><br />
 							
 												<label class="form_col"  class="disabledCheckboxes" for="basements">Basements contained in the building :</label>
-												<input name="" id="basements" type="number" min="0"  value="" disabled />
+												<input name="imput_client" id="basements" type="number" min="0"  value="" disabled />
 												<br /><br />
 
 												<label class="form_col"  class="disabledCheckboxes" for="businessdisctinc">Basements contained in the building :</label>
-												<input name="" id="businessdisctinc" type="number" min="0"  value="" disabled />
+												<input name="imput_client" id="businessdisctinc" type="number" min="0"  value="" disabled />
 												<br /><br />									
 												
 												
 												
 												<label class="form_col"  class="disabledCheckboxes" for="parking">Parking space available in the building :</label>
-												<input name="" id="parking" type="number" min="0"  value="" disabled />
+												<input name="imput_client" id="parking" type="number" min="0"  value="" disabled />
 												<br /><br />
 							
 												<label class="form_col"  class="disabledCheckboxes" for="elevator">Number of elevator cages need to be deployed :</label>
-												<input name="" id="elevator" type="number" min="0"  value="" disabled />
+												<input name="imput_client" id="elevator" type="number" min="0"  value="" disabled />
 												<br /><br />
 								
 
 							
 												<label class="form_col"  class="disabledCheckboxes" for="occupants">Number of occupants per floor : </label>
-												<input name="" id="occupants" type="number" min="0"  value="" disabled />
+												<input name="imput_client" id="occupants" type="number" min="0"  value="" disabled />
 												<br /><br />
 										
 								
 												<label class="form_col"  class="disabledCheckboxes" for="maxoccupants">Maximum number of occupants per floor : </label>
-												<input name="" id="maxoccupants" type="number" min="0"  value=""disabled  />
+												<input name="imput_client" id="maxoccupants" type="number" min="0"  value=""disabled  />
 												<br /><br />
 									
 												<label class="form_col"  class="disabledCheckboxes" for="hours">Number of hours of activity of the building : </label>
-												<input name="" id="hours" type="number" min="0"  value=""disabled />
+												<input name="imput_client" id="hours" type="number" min="0"  value=""disabled />
 												<br /><br />
 
 												<label class="form_col" class="disabledCheckboxes" for="numberofelevator">Total number of elevator you need :</label>
-												<input name=""  id="numberofelevator"    type="number" min="0"  value="" disabled readonly />   
+												<input name="imput_client"  id="numberofelevator"    type="number" min="0"  value="" disabled readonly />   
 												<br /><br />
 											
 											    <p><strong>Second, chose the quality of the elevator below</strong></p>
-											    <input name="services" id =PriceStandard type="radio" value="standard"  onchange="" > Standard<br>
-											    <input name="services" id =PricePremium  type="radio"  value="premium" onchange=""> Premium<br>
-											    <input name="services"  id =PriceExcelium type="radio"  value="other" onchange=""> Excelium<br><br>
+											    <input name="services_price" id =PriceStandard type="radio" value="standard"  onchange="" > Standard<br>
+											    <input name="services_price" id =PricePremium  type="radio"  value="premium" onchange=""> Premium<br>
+											    <input name="services_price"  id =PriceExcelium type="radio"  value="other" onchange=""> Excelium<br><br>
 											    <br /><br />
 
 											    <br>Price of an elevator $: <input id="PriceUnit" type ="text"  disabled>
@@ -1335,7 +1335,7 @@
 												<br /><br />
 												
 												<span class="form_col" id=""></span>
-												<button class="btn btn-primary" type="Send your Quote">Button</button> <button class="btn btn-primary" type="reset" value="Reset"> Reset </button>
+												<button class="btn btn-primary" type="Send your Quote">Send your Quote</button> <button class="btn btn-primary" type="reset" value="Reset" onkeyup=compute()> Reset </button>
 												<br /><br />
 
 

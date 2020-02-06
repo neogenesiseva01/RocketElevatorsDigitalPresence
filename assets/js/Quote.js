@@ -1,8 +1,10 @@
-$(function () {
+$( document ).ready(function() {
+    
+    console.log( "ready!" );
+
     $("input[name='buildingtype']").click(function () {
         console.log("click");
-        $(':reset').val('imput_client_change')
-        $(':reset').val('services_price_service')
+
         
         //MEttre toute disabled
         $("#apartments,#floors,#basements,#parking,#elevator,#businessdisctinc,#occupants,#maxoccupants,#hours,#numberofelevator").attr("disabled", "disabled");
@@ -39,14 +41,18 @@ $(function () {
 
 
         }
-     
+        compute();
+
+
+
+
         
     });
-});
 
 
-$(function imput_client_change () {
-    $("input[name='imput_client']").change(function () {
+
+
+    $("input[name='imput_client']").keyup(function () {
         console.log("change");
         
         
@@ -125,65 +131,72 @@ $(function imput_client_change () {
             console.log(NbsEleV);
             $("#numberofelevator").val(NbsEleV) 
         }
+        compute();
     });
+
+    $("input[name='services_price']").change(function () {
+        console.log("service");
+         compute();   
+    });
+
+
+
 });
 
-        $(function services_price_service () {
-            $("input[name='services_price']").change(function () {
-                console.log("service");
 
-                if ($("#PriceStandard").is(":checked")) {
-                    console.log("is residential");
+function compute() {
 
-                        var NbsEleV = parseInt($("#numberofelevator").val());
-                        var ElevStd = (7565 * NbsEleV);
-                        console.log(ElevStd);
-                        var EleStdInt = (Math.ceil(((7565 * 1.1) - 7565) * NbsEleV));
-                        console.log(EleStdInt);
-                        var PriceStd = (Math.ceil(ElevStd + EleStdInt));
-                        console.log(PriceStd);
+    if ($("#PriceStandard").is(":checked")) {
+        console.log("is residential");
 
-                        $("#PriceUnit").val(ElevStd)
-                        $("#InstallationCost").val(EleStdInt)
-                        $("#TotalCost").val(PriceStd)
-                        };           
-                
+            var NbsEleV = parseInt($("#numberofelevator").val());
+            var ElevStd = (7565 * NbsEleV);
+            console.log(ElevStd);
+            var EleStdInt = (Math.ceil(((7565 * 1.1) - 7565) * NbsEleV));
+            console.log(EleStdInt);
+            var PriceStd = (Math.ceil(ElevStd + EleStdInt));
+            console.log(PriceStd);
 
-                if ($("#PricePremium").is(":checked")) {
+            $("#PriceUnit").val(ElevStd)
+            $("#InstallationCost").val(EleStdInt)
+            $("#TotalCost").val(PriceStd)
+            };           
+    
 
-                    var NbsEleV = parseInt($("#numberofelevator").val());
-                    var ElePre = (12345 * NbsEleV);
-                    console.log(ElePre);
-                    var ElePreInt = (Math.ceil(((12345 * 1.13) - 12345) * NbsEleV));
-                    console.log(ElePreInt);
-                    var PricePre = (Math.ceil(ElePre + ElePreInt));
-                    console.log(PricePre);
+    if ($("#PricePremium").is(":checked")) {
 
-                    $("#PriceUnit").val(ElePre)
-                    $("#InstallationCost").val(ElePreInt)
-                    $("#TotalCost").val(PricePre)
-                }
+        var NbsEleV = parseInt($("#numberofelevator").val());
+        var ElePre = (12345 * NbsEleV);
+        console.log(ElePre);
+        var ElePreInt = (Math.ceil(((12345 * 1.13) - 12345) * NbsEleV));
+        console.log(ElePreInt);
+        var PricePre = (Math.ceil(ElePre + ElePreInt));
+        console.log(PricePre);
 
-
-                if ($("#PriceExcelium").is(":checked")) {  
-
-                    var NbsEleV = parseInt($("#numberofelevator").val());
-                    var EleExel = (15400 * NbsEleV);
-                    console.log(EleExel);
-                    var EleExelInt = (Math.ceil(((15400 * 1.16) - 15400) * NbsEleV));
-                    console.log(EleExelInt);
-                    var PriceExel = (Math.ceil(EleExel + EleExelInt));
-                    console.log(PriceExel);
-
-                    $("#PriceUnit").val(EleExel)
-                    $("#InstallationCost").val(EleExelInt)
-                    $("#TotalCost").val(PriceExel)
-                    };
-                
+        $("#PriceUnit").val(ElePre)
+        $("#InstallationCost").val(ElePreInt)
+        $("#TotalCost").val(PricePre)
+    }
 
 
+    if ($("#PriceExcelium").is(":checked")) {  
+
+        var NbsEleV = parseInt($("#numberofelevator").val());
+        var EleExel = (15400 * NbsEleV);
+        console.log(EleExel);
+        var EleExelInt = (Math.ceil(((15400 * 1.16) - 15400) * NbsEleV));
+        console.log(EleExelInt);
+        var PriceExel = (Math.ceil(EleExel + EleExelInt));
+        console.log(PriceExel);
+
+        $("#PriceUnit").val(EleExel)
+        $("#InstallationCost").val(EleExelInt)
+        $("#TotalCost").val(PriceExel)
+        };
 
 
-            });
-});    
+}
+
+
+
 
