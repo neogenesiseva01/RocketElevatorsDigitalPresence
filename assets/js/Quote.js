@@ -1,5 +1,6 @@
 $( document ).ready(function() {
-    
+
+
     console.log( "ready!" );
 
     $("input[name='buildingtype']").click(function () {
@@ -54,6 +55,8 @@ $( document ).ready(function() {
 
     $("input[name='imput_client']").keyup(function () {
         console.log("change");
+        
+
         
         
         
@@ -136,8 +139,10 @@ $( document ).ready(function() {
 
     $("input[name='services_price']").change(function () {
         console.log("service");
-         compute();   
+         compute(); 
     });
+
+
 
 
 
@@ -195,7 +200,10 @@ function compute() {
         };
 
 
+
+
 }
+
 
 
 
