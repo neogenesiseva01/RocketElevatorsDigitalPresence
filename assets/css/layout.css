@@ -60,7 +60,7 @@ html, body {
 body {
 	color:#666;
 	background-color:#fff;
-	font-family:'Open Sans',Arial,Helvetica,sans-serif;
+	font-family:'Roboto',Arial,Helvetica,sans-serif;
 	-webkit-font-smoothing: antialiased;
 
 	font-size:16px; line-height:1.5;
@@ -366,7 +366,7 @@ section header>h6 {
 }
 
 small { 
-	font-family: 'Lato', sans-serif; 
+	font-family: 'Roboto', sans-serif; 
 }
 label {
 	display:block;
@@ -458,11 +458,11 @@ section.dark h6.page-header {
 
 /* fonts */
 .font-open-sans {
-	font-family:'Open Sans',Arial,Helvetica,sans-serif !important;
+	font-family:'Roboto',Arial,Helvetica,sans-serif !important;
 }
 .font-lato {
 	font-weight:300;
-	font-family:'Lato',Arial,Helvetica,sans-serif !important;
+	font-family:'Roboto',Arial,Helvetica,sans-serif !important;
 }
 .font-raleway {
 	font-family:'Raleway',Arial,Helvetica,sans-serif !important;
@@ -6968,7 +6968,7 @@ section#slider:not(.custom-form) .btn-default {
 		display:inline-block;
 		color: #fff;
 		background-color:rgba(0,0,0,0.7);
-		font-family:'Lato',Arial,Helvetica,sans-serif;
+		font-family:'Roboto',Arial,Helvetica,sans-serif;
 		font-weight:300;
 		padding: 6px 15px 8px 15px;
 		opacity: 1;
@@ -7018,7 +7018,7 @@ section#slider:not(.custom-form) .btn-default {
 		list-style: none;
 	}
 	.camera_caption {
-		font-family:'Lato',Arial,Helvetica,sans-serif;
+		font-family:'Roboto',Arial,Helvetica,sans-serif;
 		font-size:22px;
 		font-weight:300;
 	}
@@ -7051,7 +7051,7 @@ section#slider:not(.custom-form) .btn-default {
 	.ei-title h3 {
 		font-size: 60px;
 		line-height: 60px;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Roboto', sans-serif;
 		text-transform: uppercase;
 		font-weight:300;
 		color: #fff;
@@ -7930,7 +7930,7 @@ section.dark #portfolio h3 {
 h1.blog-post-title,
 .blog-post-item h2 {
 	letter-spacing:0;
-	font-family:'Open Sans',Arial,Helvetica,sans-serif;
+	font-family:'Roboto',Arial,Helvetica,sans-serif;
 	font-size:22px;
 	margin-bottom:10px;
 }
@@ -8129,7 +8129,7 @@ h1.blog-post-title {
 	}
 .comments small {
 	font-size:12px;
-	font-family:'Open Sans',Arial,Helvetica,sans-serif;
+	font-family:'Roboto',Arial,Helvetica,sans-serif;
 	color:#aaa;
 }
 .comments h4 {
@@ -8350,7 +8350,7 @@ li.comment a.comment-author span {
 	line-height:1;
 	color:#ccc;
 	font-weight:bold;
-	font-family:'Lato','Open Sans',Arial,Helvetica,sans-serif;
+	font-family:'Roboto',Arial,Helvetica,sans-serif;
 }
 .timeline .timeline-entry>.timeline-vline {
 	position: absolute;
@@ -8375,7 +8375,7 @@ li.comment a.comment-author span {
 	font-size:13px;
 	text-transform:uppercase;
 	font-weight:300;
-	font-family:'Open Sans',Arial,Helvetica,sans-serif;
+	font-family:'Roboto',Arial,Helvetica,sans-serif;
 }
 section.alternate .timeline .timeline-entry {
 	background-color:#F9F9F9;
@@ -8586,7 +8586,7 @@ section.dark .error-404 {
 	padding: 20px;
 	margin-top: 10%;
 	background-color: rgba(0,0,0,0.05);
-	font-family:'Open Sans';
+	font-family:'Roboto';
 	font-size:14px; 
 	line-height:23px;
 	text-align: center;
@@ -9041,7 +9041,7 @@ section.dark-2 div.category-grid .card {
 	}
 	#footer ul.footer-list li small {
 		display:block;
-		font-family:'Open Sans',Arial,Helvetica,sans-serif;
+		font-family:'Roboto',Arial,Helvetica,sans-serif;
 		color:#ddd;
 	}
 		#footer.footer-light ul.footer-list li small {
